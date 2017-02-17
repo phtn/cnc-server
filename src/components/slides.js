@@ -1,15 +1,34 @@
 import React from 'react'
 import Slider from 'react-slick'
+import './style-components.css'
 
 const styles = {
 	slidesDiv: {
-		margin: 5,
-		height: 350
+		height: 350,
 	},
 	slides: {
+		fontFamily: 'Questrial, sans-serif',
+		fontSize: '10px',
+		letterSpacing: '2px',
 		textAlign: 'center',
 		lineHeight: '350px',
-		color: '#0288d1'
+		color: '#eee'
+	},
+	slidesBtn: {
+		backgroundColor: 'rgba(0,0,0, 0.5 )',
+		height: '50px',
+		borderRadius: '3px',
+		border: 'none',
+		minWidth: '300px'
+	},
+	slidesLabel: {
+		fontFamily: 'Questrial, sans-serif',
+		fontSize: '20px',
+		color: '#eee',
+	},
+	slidesImg: {
+		textAlign: 'center',
+		margin: '0 auto'
 	}
 }
 
@@ -24,12 +43,16 @@ const Slides = () => {
 	return (
 		<div style={styles.slidesDiv}>
 			<Slider {...settings}>
-				<div style={styles.slides}>Offices</div>
-				<div style={styles.slides}>Condominiums</div>
-				<div style={styles.slides}>Restaurants</div>
-				<div style={styles.slides}>Business Complex</div>
-				<div style={styles.slides}>Hospitals</div>
-				<div style={styles.slides}>Highly Trained Professionals</div>
+				<div style={styles.slides} className="offices-div">
+					<button style={styles.slidesBtn}>
+						<span style={styles.slidesLabel}>Office Cleaning Services</span>
+					</button>
+				</div>
+				<div style={styles.slides} className="condominiums-div">Condominiums</div>
+				<div style={styles.slides} className="restaurants-div">Restaurants</div>
+				<div style={styles.slides} className="business-complex-div">Business Complex</div>
+				<div style={styles.slides} className="hospitals-div">Hospitals</div>
+				<div style={styles.slides} className="professionals-div">Highly Trained Professionals</div>
 			</Slider>
 		</div>
 	)

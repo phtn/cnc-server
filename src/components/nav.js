@@ -12,7 +12,7 @@ const styles = {
   navDiv: {
   	height: '50px',
   	paddingLeft: '15px',
-  	borderBottom: '1px solid #999'
+  	borderBottom: '1px solid rgba(153,153,153, 0.3 )'
   },
   icon: {
   	marginRight: '10px',

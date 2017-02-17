@@ -1,0 +1,22 @@
+.offices-div {
+	background-color: rgba(2,136,209, 0.3 );
+	background: url('../../public/off.jpg');
+	background-repeat: no-repeat;
+}
+.condominiums-div {
+	background-color: rgba(255,79,129, 0.3 )
+	
+}
+.restaurants-div {
+	background-color: rgba(255,217,0, 0.1 );
+	color: #ccc !important;
+}
+.business-complex-div {
+	background-color: rgba(52,191,73, 0.3 )
+}
+.hospitals-div {
+	background-color: rgba(255,76,76, 0.3 )
+}
+.professionals-div {
+	background-color: rgba(0,167,142, 0.3 )	
+}

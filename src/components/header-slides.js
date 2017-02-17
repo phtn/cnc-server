@@ -6,7 +6,7 @@ const styles = {
 		maxHeight: '60px',
 		lineHeight: '60px',
 		textAlign: 'center',
-		borderBottom: "1px solid #999"
+		borderBottom: "1px solid rgba(153,153,153, 0.3 )"
 	},
 	headerSlides: {
 		color: '#0288d1',
@@ -19,7 +19,8 @@ const settings = {
 	arrows: false,
 	autoplay: true,
 	autoplaySpeed: 1700,
-	fade: true
+	fade: true,
+	swipeToSlide: false,
 }
 
 const HearderSlides = () => {
@@ -31,7 +32,7 @@ const HearderSlides = () => {
 				<div style={styles.headerSlides}>Move-In / Move-Out Services</div>
 				<div style={styles.headerSlides}>Carpet Care</div>
 				<div style={styles.headerSlides}>Sanitation</div>
-				<div style={styles.headerSlides}>Harwwod Floor Polishing</div>
+				<div style={styles.headerSlides}>Harwood Floor Polishing</div>
 				<div style={styles.headerSlides}>Odor Care Treatment</div>
 			</Slider>
 		</div>
