@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon from 'react-evil-icons'
 
 const styles = {
 	footerDiv: {

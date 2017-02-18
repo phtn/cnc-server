@@ -2,9 +2,8 @@ import React from 'react'
 
 const styles = {
   brand: {
-    color: 'gray',
-    fontFamily: 'Oxygen, sans-serif',
-    fontWeight: 400,
+    color: '#eee',
+    fontFamily: 'Questrial, sans-serif',
     fontSize: '14px',
     lineHeight: '50px',
     letterSpacing: '1px'
@@ -12,7 +11,8 @@ const styles = {
   navDiv: {
   	height: '50px',
   	paddingLeft: '15px',
-  	borderBottom: '1px solid rgba(153,153,153, 0.3 )'
+  	borderBottom: '1px solid rgba(153,153,153, 0.3 )',
+  	backgroundColor: 'rgba(0,0,0, 0.3)'
   },
   icon: {
   	marginRight: '10px',

@@ -1,13 +1,33 @@
+@media (max-width: 400px) {
+	.offices-div {
+		background-size: 300% auto !important;
+	}
+	.condominiums-div {
+		background-size: 300% auto !important;
+		background-position: top center !important;
+	}
+	.restaurants-div {
+		background-size: 210% auto !important;
+		background-position: top center !important;
+	}
+}
+
 .offices-div {
-	background-color: rgba(2,136,209, 0.3 );
 	background: url('../../public/off.jpg');
 	background-repeat: no-repeat;
+
 }
 .condominiums-div {
-	background-color: rgba(255,79,129, 0.3 )
-	
+	background-color: rgba(255,79,129, 0.3 );
+	background: url('../../public/condo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 .restaurants-div {
+	background: url('../../public/resto.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom center !important;
 	background-color: rgba(255,217,0, 0.1 );
 	color: #ccc !important;
 }

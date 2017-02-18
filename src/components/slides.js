@@ -34,7 +34,7 @@ const styles = {
 
 const settings = {
 	arrows: false,
-	autoplay: true,
+	autoplay: false,
 	autoplaySpeed: 3000,
 	dots: true
 }
@@ -48,8 +48,16 @@ const Slides = () => {
 						<span style={styles.slidesLabel}>Office Cleaning Services</span>
 					</button>
 				</div>
-				<div style={styles.slides} className="condominiums-div">Condominiums</div>
-				<div style={styles.slides} className="restaurants-div">Restaurants</div>
+				<div style={styles.slides} className="condominiums-div">
+					<button style={styles.slidesBtn}>
+						<span style={styles.slidesLabel}>Condominiums</span>
+					</button>
+				</div>
+				<div style={styles.slides} className="restaurants-div">
+					<button style={styles.slidesBtn}>
+						<span style={styles.slidesLabel}>Restaurants</span>
+					</button>
+				</div>
 				<div style={styles.slides} className="business-complex-div">Business Complex</div>
 				<div style={styles.slides} className="hospitals-div">Hospitals</div>
 				<div style={styles.slides} className="professionals-div">Highly Trained Professionals</div>
