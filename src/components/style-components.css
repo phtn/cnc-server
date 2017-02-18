@@ -10,6 +10,22 @@
 		background-size: 210% auto !important;
 		background-position: top center !important;
 	}
+	.business-complex-div {
+		background-size: 210% auto !important;
+		background-position: top center !important;
+	}
+	.hotels-div {
+		background-size: 210% auto !important;
+		background-position: top center !important;
+	}
+	.malls-div {
+		background-size: 210% auto !important;
+		background-position: top center !important;
+	}
+	.hospitals-div {
+		background-size: 295% auto !important;
+		background-position: top center !important;
+	}
 }
 
 .offices-div {
@@ -32,10 +48,32 @@
 	color: #ccc !important;
 }
 .business-complex-div {
+	background: url('../../public/busi.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom center !important;
 	background-color: rgba(52,191,73, 0.3 )
 }
+.hotels-div {
+	background: url('../../public/hotel.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom center !important;
+	background-color: rgba(52,191,73, 0.3 )
+}
+.malls-div {
+	background: url('../../public/mall.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom center !important;
+	background-color: rgba(52,191,73, 0.3 );
+}
 .hospitals-div {
-	background-color: rgba(255,76,76, 0.3 )
+	background: url('../../public/hospital.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom center !important;
+	background-color: rgba(255,76,76, 0.3 );
 }
 .professionals-div {
 	background-color: rgba(0,167,142, 0.3 )	

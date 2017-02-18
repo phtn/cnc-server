@@ -15,7 +15,8 @@ const styles = {
 		fontSize: '16px',
 		color: '#eee',
 		letterSpacing: '2px',
-		textDecoration: 'none'
+		textDecoration: 'none',
+		cursor: 'pointer',
 	},
 	copy: {
 		fontSize: '8px',
