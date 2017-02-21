@@ -34,7 +34,7 @@ const Footer = () => {
 	return (
 		<div style={styles.footerDiv}>
 			<span style={styles.callIcon} className="fa fa-phone"></span>
-			<span style={styles.footerLabel} >Call <a style={styles.footerLabel} href="tel:2150008000">215-000-8000</a></span>
+			<span style={styles.footerLabel} >Call <a style={styles.footerLabel} href="tel:2675778444">267-577-8444</a></span>
 			<span style={styles.copy}>&copy; 2017</span>
 		</div>
 	)
