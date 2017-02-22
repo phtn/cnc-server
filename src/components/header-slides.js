@@ -18,9 +18,8 @@ const styles = {
 const settings = {
 	arrows: false,
 	autoplay: true,
-	autoplaySpeed: 1700,
+	autoplaySpeed: 3700,
 	fade: true,
-	swipeToSlide: false,
 }
 
 const HearderSlides = () => {
@@ -34,6 +33,7 @@ const HearderSlides = () => {
 				<div style={styles.headerSlides}>Sanitation</div>
 				<div style={styles.headerSlides}>Harwood Floor Polishing</div>
 				<div style={styles.headerSlides}>Odor Care Treatment</div>
+				<div style={styles.headerSlides}>Landscaping</div>
 			</Slider>
 		</div>
 	)
