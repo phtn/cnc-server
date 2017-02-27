@@ -51,6 +51,6 @@
 	background: url('../../public/office-vector.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-color: rgba(255,79,129, 0.3 );
+	background-color: 'none';
 	padding-top: 100px;
 }
