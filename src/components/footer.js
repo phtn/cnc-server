@@ -3,8 +3,9 @@ import React from 'react'
 const styles = {
 	footerDiv: {
 		height: '70px',
-		position: 'absolute',
-		bottom: 0,
+		/*position: 'absolute',*/
+		/*bottom: 0,*/
+		marginTop: '30px',
 		width: '100%',
 		backgroundColor: 'rgba(2,136,209, 0.5 )',
 		textAlign: 'center',

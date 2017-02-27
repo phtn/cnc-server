@@ -27,6 +27,11 @@
 		background-position: top center !important;
 	}
 }
+@media (min-width: 420px) {
+	.office-div {
+		background-size: 200% auto;
+	}
+}
 
 .offices-div {
 	background: url('../../public/off.jpg');

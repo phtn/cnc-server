@@ -13,7 +13,8 @@ class App extends Component {
 
         <HeaderSlides />
         <Slides />
-        <Footer />
+				<Footer/>
+
       </div>
     );
   }

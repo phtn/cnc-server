@@ -6,11 +6,10 @@ const Services = () => {
 		name: 'offices-div animated fadeIn',
 		type: 'Office',
 		detailDiv: 'office-detail animated fadeIn', 
-		detailHeader: '\"A sorted environment greatly improves productivity.\"'
-		
+		detailHeader: '"A sorted environment greatly improves productivity."',
 		},
 
-		{id: 2, title: 'Condominiums', name: 'condominiums-div animated fadeIn'},
+		{id: 2, title: 'Condominiums', name: 'condominiums-div animated fadeIn', type: 'condos'},
 		{id: 3, title: 'Restaurants', name: 'restaurants-div animated fadeIn'},
 		{id: 4, title: 'Hotels', name: 'hotels-div animated fadeIn'},
 		{id: 5, title: 'Malls', name: 'malls-div animated fadeIn'},

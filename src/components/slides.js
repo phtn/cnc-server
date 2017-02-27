@@ -4,9 +4,8 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { selectService } from '../actions'
 import { Link } from 'react-router'
-import './style-components.css'
 import { styles } from '../styles/slider-styles'
-
+import './style-components.css'
 
 const settings = {
 	arrows: false,
@@ -14,6 +13,7 @@ const settings = {
 	speed: 1000,
 	autoplaySpeed: 5000,
 	dots: true,
+	swipe: false,
 }
 
 class Slides extends Component {
