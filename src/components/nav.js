@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const styles = {
   brand: {
@@ -19,6 +20,9 @@ const styles = {
   	marginRight: '10px',
   	lineHeight: '50px',
   	color: '#0288d1'
+  },
+  link: {
+    textDecoration: 'none'
   }
 }
 
@@ -28,7 +32,7 @@ const Nav = () => {
 	return (
 		<div style={styles.navDiv}>
 				<i style={styles.icon} className="fa fa-mouse-pointer"></i>
-        <span style={styles.brand}>{brand}</span>
+        <Link to='/' style={styles.link}><span style={styles.brand}>{brand}</span></Link>
 		</div>
 	)
 }
