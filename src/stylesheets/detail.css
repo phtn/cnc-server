@@ -1,4 +1,4 @@
-
+/* OFFICE */
 
 @media (max-width: 420px) {
 	.detail-title {
@@ -53,4 +53,106 @@
 	background-size: 100% auto;
 	background-color: 'none';
 	padding-top: 100px;
+}
+
+/* CONDOS */
+.condo-detail {
+	background: url('../../public/condo-lobby.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 130px !important;	
+	background-color: 'none';
+	background-position: center;
+	padding-top: 100px;
+}
+@media (min-width: 750px) {
+	.detail-title {
+		font-size: 30px !important;
+	}
+	.condo-detail {
+		padding-top: 100px !important;
+		height: 325px !important;
+	}
+}
+
+/* RESTAURANT */
+
+.restaurant-detail {
+	background: url('../../public/resto-kitchen.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 130px !important;
+	background-color: 'none';
+	background-position: center;
+	padding-top: 100px;
+}
+@media (min-width: 750px) {
+	.detail-title {
+		font-size: 30px !important;
+	}
+	.restaurant-detail {
+		padding-top: 100px !important;
+		height: 325px !important;
+	}
+}
+
+/* HOTELS */
+.hotels-detail {
+	background: url('../../public/hotel-room.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 80px !important;
+	background-color: 'none';
+	background-position: bottom;
+	padding-top: 100px;
+}
+@media (min-width: 750px) {
+	.detail-title {
+		font-size: 30px !important;
+	}
+	.hotels-detail {
+		padding-top: 100px !important;
+		height: 325px !important;
+	}
+}
+
+/* MALLS */
+.malls-detail {
+	background: url('../../public/mall-rooms.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 130px !important;
+	background-color: 'none';
+	background-position: bottom;
+	padding-top: 100px;
+}
+@media (min-width: 750px) {
+	.detail-title {
+		font-size: 30px !important;
+	}
+	.malls-detail {
+		padding-top: 100px !important;
+		height: 325px !important;
+	}
+}
+
+/* HOSPITALS */
+
+.hospital-detail {
+	background: url('../../public/hospital-lobby.jpg');
+	background-repeat: no-repeat;
+	height: 130px !important;
+	background-size: 100% auto;
+	background-color: 'none';
+	background-position: center;
+	padding-top: 100px;
+}
+@media (min-width: 750px) {
+	.detail-title {
+		font-size: 30px !important;
+	}
+	.hospital-detail {
+		padding-top: 100px !important;
+		height: 325px !important;
+	}
 }

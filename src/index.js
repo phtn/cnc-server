@@ -9,6 +9,7 @@ import App from './App';
 import ServiceContainer from './containers/ServiceContainer'
 import './index.css';
 import './animate.css'
+import './font-awesome/css/font-awesome.min.css'
 
 const store = createStore(reducers)
 

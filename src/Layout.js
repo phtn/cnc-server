@@ -9,7 +9,6 @@ class Layout extends Component {
 			<div>
 				<Nav />
 				{this.props.children}
-				
 			</div>
 		)
 	}

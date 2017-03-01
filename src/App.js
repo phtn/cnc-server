@@ -11,10 +11,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <HeaderSlides />
         <Slides />
-				<Footer/>
-
+        <HeaderSlides />
+				<Footer />				
       </div>
     );
   }

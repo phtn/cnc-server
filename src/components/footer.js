@@ -2,19 +2,21 @@ import React from 'react'
 
 const styles = {
 	footerDiv: {
-		height: '70px',
-		/*position: 'absolute',*/
-		/*bottom: 0,*/
-		marginTop: '30px',
+		height: '50px',
+		border: '0px solid red',
+		marginTop: '45px',
 		width: '100%',
-		backgroundColor: 'rgba(2,136,209, 0.5 )',
+		position: 'absolute',
+		bottom: 0,
+		/*backgroundColor: 'rgba(2,136,209, 0.5 )',*/
+		backgroundColor: 'none',
 		textAlign: 'center',
-		lineHeight: '70px'
+		lineHeight: '50px'
 	},
 	footerLabel: {
-		fontFamily: 'Questrial, sans-serif',
+		fontFamily: 'Quicksand, sans-serif',
 		fontSize: '16px',
-		color: '#eee',
+		color: '#333',
 		letterSpacing: '2px',
 		textDecoration: 'none',
 		cursor: 'pointer',
@@ -27,7 +29,12 @@ const styles = {
 	},
 	callIcon: {
 		marginRight: 10,
-		color: '#eee',
+		color: '#555',
+	},
+	footerChat: {
+		marginLeft: '130px',
+		color: '#333',
+		fontSize: '16px',
 	}
 }
 
@@ -35,8 +42,8 @@ const Footer = () => {
 	return (
 		<div style={styles.footerDiv}>
 			<span style={styles.callIcon} className="fa fa-phone"></span>
-			<span style={styles.footerLabel} >Call <a style={styles.footerLabel} href="tel:2675778444">267-577-8444</a></span>
-			<span style={styles.copy}>&copy; 2017</span>
+			<span style={styles.footerLabel} ><a style={styles.footerLabel} href="tel:2675778444">267-577-8444</a></span>
+			<span style={styles.footerChat} className="fa fa-comments"></span>
 		</div>
 	)
 }

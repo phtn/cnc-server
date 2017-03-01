@@ -1,5 +1,6 @@
 import React from 'react'
 import mojs from 'mo-js'
+import ServiceSpec from './service-spec'
 import '../stylesheets/detail.css'
 
 const styles = {
@@ -17,11 +18,16 @@ const styles = {
 		marginTop: '20px',
 	},
 	subtitle: {
-		color: '#0288d1'
+		color: '#0288d1',
+		fontSize: '28px',
 	},
 	spec: {
 		color: '#666',
 		fontSize: '14px'
+	},
+	hr: {
+		border: 'none',
+		borderBottom: '1px solid #ccc'
 	}
 }
 
@@ -40,7 +46,7 @@ const photons = () => {
 		  duration:      3000,
 		  angle:        { 0: 270 },
 		  easing:        'cubic.out',
-		  repeat: 			20
+		  repeat: 			5
 		}).play()
 
 	new mojs.Shape({
@@ -56,7 +62,7 @@ const photons = () => {
 		  duration:      2500,
 		  angle:        { 0: 180 },
 		  easing:        'cubic.out',
-		  repeat: 			20
+		  repeat: 			5
 		}).play()
 }
 
@@ -73,7 +79,7 @@ const loadPhotons = (type) => {
 		zeroPhotons()
 	}
 }
-const ServiceDetail = ({title, type, header, detail}) => {
+const ServiceDetail = ({title, type, header, detail, slogan}) => {
 	return (
 		<div style={styles.div} className="">
 			<div className={detail}>
@@ -82,9 +88,11 @@ const ServiceDetail = ({title, type, header, detail}) => {
 			
 			</div>
 			<div style={styles.subtitleDiv}>
-				<span style={styles.subtitle}>Professional Cleaning Services</span><br/>
-				<span style={styles.spec}>{type} Cleaning Spec</span>
+				<span style={styles.subtitle}>{slogan}</span><br/><br/>
+				<span style={styles.spec}>{type} Cleaning Specs</span>
 			</div>
+			<hr style={styles.hr}/>
+			<ServiceSpec />
 		</div>
 	)
 }
