@@ -1,0 +1,15 @@
+.number {
+	animation-delay: 0s;
+}
+.google {
+	animation-delay: .1s;
+}
+.facebook {
+	animation-delay: .2s;
+}
+.email {
+	animation-delay: .3s;
+}
+.chat {
+	animation-delay: .4s;
+}

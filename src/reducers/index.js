@@ -32,6 +32,7 @@ const Services = () => {
 		detailDiv: 'malls-detail animated fadeIn', 
 		detailHeader: '',
 		slogan: 'On-Demand Services.'},
+		
 		{id: 6, title: 'Hospitals', name: 'hospitals-div animated fadeIn',
 		type: 'Hospitals',
 		detailDiv: 'hospital-detail animated fadeIn', 
@@ -59,5 +60,16 @@ const Specs = () => {
 	]
 }
 
-const reducers = combineReducers({services: Services, active: ActiveService, specs: Specs})
+const Call = (state = {}, action) => {
+	if(action.type === 'TOGGLE_CALL') {
+		return !action.payload
+	} else {
+		return true
+	}
+}
+
+const reducers = combineReducers({services: Services, 
+																	active: ActiveService,
+																	specs: Specs,
+																	call: Call})
 export default reducers

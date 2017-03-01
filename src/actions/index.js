@@ -1,7 +1,13 @@
 export const selectService = (service) => {
-	console.log(service.title)
 	return {
 		type: 'SERVICE_SELECTED',
 		payload: service
+	}
+}
+export const toggleCall = (call) => {
+	console.log(call)
+	return {
+		type: 'TOGGLE_CALL',
+		payload: call
 	}
 }

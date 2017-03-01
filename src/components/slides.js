@@ -13,6 +13,7 @@ const settings = {
 	speed: 1000,
 	autoplaySpeed: 5000,
 	dots: true,
+	infinite: true,
 	swipe: false,
 }
 
