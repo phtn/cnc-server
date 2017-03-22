@@ -124,7 +124,7 @@ class Footer extends Component {
 		<div style={styles.footerDiv}>
 		<Flexbox flexDirection='row' minHeight='auto'>
 			
-			<Flexbox style={styles.flexbox} element='footer' flexGrow={1} height='40px' className="animated fadeInUp call">
+			<Flexbox style={styles.flexbox} element='footer' flexGrow={1} height='40px' className="animated fadeInLeft call">
 				<div style={styles.flexIcon}>
 					<span onClick={()=> this.props.toggleCall(this.props.call)} style={styles.footerIcon} className="fa fa-phone"></span>
 				</div>
