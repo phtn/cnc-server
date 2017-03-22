@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 const styles = {
@@ -40,18 +40,17 @@ const styles = {
 
 const brand = "CLICK N CLEAN"
 
-const Nav = () => {
+class Nav extends Component {
+  render(){
 	return (
 		<div style={styles.navDiv}>
-        <span style={styles.iconStack} className="fa-stack fa-md" >
-          <i style={styles.icon2} className="fa fa-circle-o fa-stack-2x"></i>
-          <i style={styles.icon1} className="fa fa-mouse-pointer fa-stack-1x"></i>
-        </span>
-				
-        <Link to='/' style={styles.link}><span style={styles.brand}>{brand}</span></Link>
+      <span style={styles.iconStack} className="fa-stack fa-md" >
+        <i style={styles.icon2} className="fa fa-circle-o fa-stack-2x"></i>
+        <i style={styles.icon1} className="fa fa-mouse-pointer fa-stack-1x"></i>
+      </span>
+			
+      <Link to='/' style={styles.link}><span style={styles.brand}>{brand}</span></Link>
 		</div>
-	)
+	)}
 }
 export default Nav 
-
-// #0288d1 blue

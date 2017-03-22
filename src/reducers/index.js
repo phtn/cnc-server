@@ -1,4 +1,8 @@
 import { combineReducers } from 'redux'
+//import db from '../firebase'
+
+//let firebaseRef = db.ref('/services')
+
 
 const Services = () => {
 	return [
@@ -7,7 +11,7 @@ const Services = () => {
 		type: 'Office',
 		detailDiv: 'office-detail animated fadeIn', 
 		detailHeader: '"A sorted environment greatly improves productivity."',
-		slogan: 'Freshen up your office!'}, 
+		slogan: 'Freshen up your office!'},
 		
 		{id: 2, title: 'Condominiums', name: 'condominiums-div animated fadeIn', 
 		type: 'Condominiums',
@@ -41,6 +45,22 @@ const Services = () => {
 	]
 }
 
+/*const getData = () => {
+	firebaseRef.on('value', snap => {
+		let services = snap.val()
+		// map services object from firebase
+		let arr = []
+		for (let key in services){
+			arr.push(services[key])
+		}
+		return arr
+	})
+}*/
+
+const ProServices = () => {
+	return [{id: 1}]
+}
+
 const ActiveService = (state={}, action) => {
 	switch(action.type) {
 		case 'SERVICE_SELECTED':
@@ -60,16 +80,42 @@ const Specs = () => {
 	]
 }
 
+const SpecsSelected = (state={}, action) => {
+	switch(action.type){
+		case 'SPECS_SELECTED':
+			return action.payload
+		default:
+			return state
+	}
+}
+
 const Call = (state = {}, action) => {
 	if(action.type === 'TOGGLE_CALL') {
-		return !action.payload
+		return !action.payload	
 	} else {
 		return true
 	}
 }
 
-const reducers = combineReducers({services: Services, 
-																	active: ActiveService,
-																	specs: Specs,
-																	call: Call})
+const Data = (state={}, action) => {
+	switch(action.type){
+		case 'REQUEST_DATA':
+			console.log('data requested')
+			return null
+		case 'LOAD_DATA':
+			return action.payload
+
+		default:
+			return state
+	}
+}
+
+const reducers = combineReducers({
+	services: Services, 
+	proServices: ProServices,
+	active: ActiveService,
+	specs: Specs,
+	specsSelected: SpecsSelected, 
+	call: Call,
+	data: Data})
 export default reducers

@@ -13,31 +13,18 @@ const styles = {
 		width: '100%',
 		position: 'absolute',
 		bottom: 0,
-		/*backgroundColor: 'rgba(2,136,209, 0.5 )',*/
 		backgroundColor: 'none',
 		textAlign: 'center',
 	},
-	footerLabel: {
-		fontFamily: 'Quicksand, sans-serif',
-		fontSize: '16px',
-		color: '#333',
-		letterSpacing: '2px',
-		textDecoration: 'none',
-		cursor: 'pointer',
-	},
-	copy: {
-		fontSize: '8px',
-		fontFamily: 'Questrial, sans-serif',
-		color: '#eee',
-		marginLeft: 70
-	},
-	callIcon: {
+	footerIcon: {
 		color: '#555',
 		fontSize: '18px',
 	},
-	footerChat: {
-		color: '#333',
-		fontSize: '16px',
+	footerLabel: {
+		color: '#555',
+		fontSize: '18px',
+		textDecoration: 'none',
+		fontFamily: 'Quicksand, sans-serif',
 	},
 	flexboxDiv: {
 		borderTop: '1px solid gray',
@@ -51,24 +38,27 @@ const styles = {
 	},
 	flexIcon: {
 		textAlign: 'center',
-
+		cursor: 'pointer',
+		userSelect: 'none',
 	},
 	flexContent: {
 		textAlign: 'center',
-	},
-	link: {
-		textDecoration: 'none !important',
+		fontSize: '18px',
 	}
 }
 
 class Footer extends Component {
+
+	componentDidMount(){
+
+	}
 
 	showGoogle() {
 		return (
 			<Flexbox key='g' style={styles.flexbox} element='footer' flexGrow={1} height='40px' className={this.getGClass()}>
 				<div style={styles.flexIcon}>
 					<a href='https://www.google.com/search?q=%22click+n+clean+philadelphia%22'>
-						<span style={styles.callIcon} className="fa fa-google"></span>
+						<span style={styles.footerIcon} className="fa fa-google"></span>
 					</a>
 				</div>
 			</Flexbox>
@@ -83,7 +73,7 @@ class Footer extends Component {
 			<Flexbox key='f' style={styles.flexbox} element='footer' flexGrow={1} height='40px' className={this.getFClass()}>
 				<div style={styles.flexIcon}>
 					<a href='https://www.facebook.com/clickncleanPA/'>
-						<span style={styles.callIcon} className="fa fa-facebook"></span>
+						<span style={styles.footerIcon} className="fa fa-facebook"></span>
 					</a>
 				</div>
 			</Flexbox>
@@ -98,7 +88,7 @@ class Footer extends Component {
 			<Flexbox key='e' style={styles.flexbox} element='footer' flexGrow={1} height='40px' className={this.getEClass()}>
 				<div style={styles.flexIcon}>
 					<a href='https://www.facebook.com/clickncleanPA/'>
-						<span style={styles.callIcon} className="fa fa-envelope"></span>
+						<span style={styles.footerIcon} className="fa fa-envelope"></span>
 					</a>
 				</div>
 			</Flexbox>
@@ -110,7 +100,7 @@ class Footer extends Component {
 
 	showNumber() {
 		return(
-			<Flexbox style={styles.flexbox} element='footer' flexGrow={1} height='40px' className="animated fadeInLeft number">
+			<Flexbox style={styles.flexbox} element='footer' flexGrow={3} height='40px' className="animated fadeInUp number">
 				<div style={styles.flexIcon}>
 					<span style={styles.footerLabel} ><a style={styles.footerLabel} href="tel:2675778444">267-577-8444</a></span>
 				</div>
@@ -136,7 +126,7 @@ class Footer extends Component {
 			
 			<Flexbox style={styles.flexbox} element='footer' flexGrow={1} height='40px' className="animated fadeInUp call">
 				<div style={styles.flexIcon}>
-					<span onClick={()=> this.props.toggleCall(this.props.call)} style={styles.callIcon} className="fa fa-phone"></span>
+					<span onClick={()=> this.props.toggleCall(this.props.call)} style={styles.footerIcon} className="fa fa-phone"></span>
 				</div>
 			</Flexbox>
 
@@ -146,7 +136,7 @@ class Footer extends Component {
 			
 			<Flexbox style={styles.flexbox} element='footer' flexGrow={1} height='40px' className="animated fadeInUp chat">
 				<div style={styles.flexIcon}>
-					<span style={styles.callIcon} className="fa fa-comments"></span>
+					<span style={styles.footerIcon} className="fa fa-comments"></span>
 				</div>
 			</Flexbox>
 
@@ -158,18 +148,13 @@ class Footer extends Component {
 
 const mapStateToProps = state => {
 	return {
-		call: state.call
+		call: state.call,
 	}
 }
 const mapDispatchToProps = dispatch => {
-	return bindActionCreators({ toggleCall: toggleCall }, dispatch)
+	return bindActionCreators({
+		toggleCall: toggleCall
+	}, dispatch)
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Footer)
 
-/*
-<div style={styles.footerDiv}>
-			<span style={styles.callIcon} className="fa fa-phone"></span>
-			<span style={styles.footerLabel} ><a style={styles.footerLabel} href="tel:2675778444">267-577-8444</a></span>
-			<span style={styles.footerChat} className="fa fa-comments"></span>
-		</div>
-*/

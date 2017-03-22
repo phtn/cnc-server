@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import reducers from './reducers'
+import thunk from 'redux-thunk'
+//import createLogger from 'redux-logger'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import Layout from './Layout'
 import App from './App';
@@ -11,7 +13,9 @@ import './index.css';
 import './animate.css'
 import './font-awesome/css/font-awesome.min.css'
 
-const store = createStore(reducers)
+/*const logger = createLogger()*/
+
+const store = createStore(reducers, applyMiddleware( thunk ))
 
 ReactDOM.render(
 	<Provider store={store}>

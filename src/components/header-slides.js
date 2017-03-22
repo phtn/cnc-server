@@ -1,6 +1,14 @@
 import React from 'react'
 import Slider from 'react-slick'
+//import db from '../firebase'
+
+//let firebaseRef = db.ref('/services')
+
+
+
 import './media.css'
+
+
 
 const styles = {
 	headerSlideDiv: {
@@ -42,6 +50,9 @@ const settings = {
 	vertical: true
 }
 
+
+
+
 const HearderSlides = () => {
 	return (
 		<div style={styles.headerSlideDiv} className="header-div">
@@ -59,4 +70,8 @@ const HearderSlides = () => {
 		</div>
 	)
 }
+
+
+
+
 export default HearderSlides

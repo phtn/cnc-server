@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import { selectSpec } from '../actions'
 import spray from  '../cleaning-icons/svg/spray.svg'
 import vacuum from  '../cleaning-icons/svg/vacuum-cleaner.svg'
 import mop from  '../cleaning-icons/svg/mop.svg'
@@ -8,9 +10,10 @@ import bin from  '../cleaning-icons/svg/bin.svg'
 import '../stylesheets/spec.css'
 import Flexbox from 'flexbox-react'
 
+
 const specImg = [spray, vacuum, mop, windows, bin]
 
-const styles ={
+const styles = {
 	specDiv: {
 		height: '300px',
 		margin: 10,
@@ -41,8 +44,10 @@ const styles ={
 		textAlign: 'left'
 	}
 }
-class ServiceSpec extends Component {
-
+class Specs extends Component {
+	componentDidMount(){
+		
+	}
 	getSpec() {
 		return this.props.specs.map(spec => (
 				<Flexbox key={spec.id} flexDirection="row" minHeight="auto" >
@@ -72,7 +77,11 @@ class ServiceSpec extends Component {
 
 const mapStateToProps = state => {
 	return {
-		specs: state.specs
+		specs: state.specs,
+		firebase: state.firebase
 	}
 }
-export default connect(mapStateToProps) (ServiceSpec)
+const mapDispatchToProps = dispatch => {
+	return bindActionCreators({ selectSpec: selectSpec})
+}
+export default connect(mapStateToProps, mapDispatchToProps) (Specs)
